@@ -9,6 +9,18 @@ For each number K in the grid, the nearest K via taxicab distance must be exactl
 Once the grid is completed, the answer to the puzzle is found as follows: 
 compute the product of the values in each row, and then take the sum of these products.
 '''
+# original_grid = [
+#     [0, 3, 0, 0, 0, 7, 0, 0, 0, 0],
+#     [0, 0, 0, 4, 0, 0, 0, 0, 0, 0],
+#     [0, 0, 0, 0, 0, 0, 0, 0, 2, 0],
+#     [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+#     [6, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+#     [0, 0, 0, 0, 0, 0, 0, 3, 0, 6],
+#     [0, 0, 0, 0, 0, 0, 2, 0, 0, 0],
+#     [0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+#     [0, 0, 0, 0, 0, 0, 6, 0, 0, 0],
+#     [0, 0, 0, 0, 5, 0, 0, 0, 2, 0],
+# ]
 
 # manually did some of the puzzle because program was initially too slow
 grid = [
