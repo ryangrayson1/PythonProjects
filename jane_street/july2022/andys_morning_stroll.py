@@ -99,8 +99,9 @@ def get_neighbors(steps_away):
         neighbors = neighbors[-start:] + neighbors[:-start]
     return neighbors
 
-
+# use DP
 mem = [ [ [-1] * freq[steps_away] for steps_away in range(12) ] for steps_taken in range(21) ]
+# set known probabilities
 for steps_taken in range(21):
     for steps_away in range(12):
         for position in range(freq[steps_away]):
@@ -139,7 +140,6 @@ for steps, row in enumerate(adj_map):
         print()
     print()
 
-
 print('probability of making back to home hexagon in <= 20 steps on the floor: ')
 # using -1 for first position to indicate the start of the walk
 prob_20 = prob_back_in_20(0, 0, -1)
@@ -147,5 +147,4 @@ print(prob_20)
 print()
 ans = 1 - prob_20
 print('ANSWER: ')
-print(ans)
-# print()
+print(round(ans, 7))
